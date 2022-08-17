@@ -1,0 +1,50 @@
+[
+  {
+    "instrument": {
+      "id": 1,
+      "instrumento": "Guitarra Eléctrica",
+      "marcaModelo": "Fender",
+      "disponible": true
+    }
+  },
+  {
+    "instrument": {
+      "id": 2,
+      "instrumento": "Guitarra Eléctrica",
+      "marcaModelo": "Jackson",
+      "disponible": false
+    }
+  },
+  {
+    "instrument": {
+      "id": 3,
+      "instrumento": "Saxo",
+      "marcaModelo": "Selmer",
+      "disponible": true
+    }
+  },
+  {
+    "instrument": {
+      "id": 4,
+      "instrumento": "Batería completa",
+      "marcaModelo": "Sonor",
+      "disponible": false
+    }
+  },
+  {
+    "instrument": {
+      "id": 5,
+      "instrumento": "Batería completa",
+      "marcaModelo": "Lazer",
+      "disponible": true
+    }
+  },
+  {
+    "instrument": {
+      "id": 6,
+      "instrumento": "Armónica",
+      "marcaModelo": "Höner",
+      "disponible": true
+    }
+  }
+]
