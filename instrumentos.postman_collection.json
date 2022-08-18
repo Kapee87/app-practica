@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "0bd26b8a-491c-4f4f-ba73-17030ed47d40",
+		"name": "instrumentos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22348548"
+	},
+	"item": [
+		{
+			"name": "Lista disponibles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/instrumentos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"instrumentos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista completa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/instrumentos/listaCompleta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"instrumentos",
+						"listaCompleta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "2deje34",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "name",
+						"value": "blabla1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "price",
+						"value": "421",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "url",
+						"value": "tvp.ocm",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "description",
+						"value": "blabalbal223",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"instrumento\": \"Gaita\",\r\n      \"marcaModelo\": \"Irish wind\",\r\n      \"disponible\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/instrumentos/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"instrumentos",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"instrumento\": \"Armónica Diatónica\",\r\n      \"marcaModelo\": \"Hötone\",\r\n      \"disponible\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/instrumentos/editar/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"instrumentos",
+						"editar",
+						"7"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/instrumentos/vaciar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"instrumentos",
+						"vaciar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar instrumento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/instrumentos/borrar/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"instrumentos",
+						"borrar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
